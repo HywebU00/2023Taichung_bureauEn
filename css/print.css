@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html {background:none;}
+body { background:none; background-color:#fff; color:#000; margin:0 2%; font-size:1em;}
+@media print {
+.accesskey, .menu, .function, .navigation, .friendly, .fontSize, .share, .search, .footer, .sidebar, .sidebarCtrl, .backHome, .navi, .gmap, iframe { display:none !important;}
+.header { padding:8px 0; position:relative !important; box-shadow:none !important;}
+.center>header { display:block; margin:1em 0 0;}
+.pubInfo { background:none; border:1px solid #bbb; color:#888;}
+.pubInfo li em { color:#000;}
+ol.policies { max-width:100%; background-size:contain;}
+.cpArticle figure{width:48%; float:left; margin-right:1em;}
+.cpArticle figure img{ width:100%;}
+}

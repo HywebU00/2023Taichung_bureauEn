@@ -1,0 +1,322 @@
+/*勞工局統計數字*/
+.row>section.laborData{width: 92vw;padding:0 0 1em;margin:40px auto !important;background:#fff;}
+.row>section.laborData>h2{padding: 0;line-height: 2.4em;}
+
+.laborData>h2{background:#73ae18;color:#fff;height: 2.4em;}
+.laborData ul{text-align: right;border-bottom: 1px solid #9facaa;}
+.laborData li{border-bottom: 1px dotted #9facaa;padding:0 1em;height: 2.6em;line-height: 2.6em;}
+.laborData li:last-child{border: none;}
+.laborData li .label{width:7.5em;float: left;}
+.laborData li em {font-size:1.3em;display:inline-block;margin-left:.5em;}
+.sign{display:inline-block;width:20px;height:20px;background:url(../images/sign.png) no-repeat center center;background-size:16px;vertical-align:middle;margin:-3px 0 0 .4em}
+.sign.down{transform:rotate(180deg);}
+.sign.equal {background:#7d8f8c; height:5px;width:18px;}
+
+.row>.laborData .more{margin:1em 0 0;}
+.laborData .more a{display:inline-block;vertical-align:middle;background:#f90;color:#fff;height:2em;line-height:2em;padding:0 .6em;min-width:3em;border-radius:2em;box-shadow: none;}
+
+.laborData .more a:before{color:#fff}
+.laborData .more a:hover,
+.laborData .more a:focus{background: #fc7300}
+@media screen and (min-width:801px){
+	.row>section.laborData{width: 96vw;position: relative;margin:0 auto 30px !important;box-shadow:rgba(0,0,0,.5) 0 4px 12px !important;overflow:hidden;padding:0;}
+
+	.laborData>h2{position:absolute;left:0;top:0;bottom:0;width:25%;line-height: 1.6em;height: auto;}
+	.laborData>h2:before{content:'';display:inline-block;height:100%;vertical-align:middle;}
+	.laborData ul{float:left;padding:1.2em 2% .4em 0;width:26%;border: none;}
+	.laborData h2+ul{margin-left:25%;width:32%;}
+	.laborData li{white-space: nowrap;padding:0;border: none;}
+	.laborData li .label{float: none;display: inline-block;text-align:right;}
+	.row>.laborData .more{width:12%;position:absolute;right:0;top:50%;margin-top:-1.1em;}
+}
+@media screen and (min-width:1001px){
+	.row>section.laborData{width:96%;box-shadow:rgba(0,0,0,.65) 0 8px 16px -10px;}
+}
+
+
+
+
+/*勞工局：就業資訊、勞資關係、勞動權益*/
+.row>section.subject1{position: relative;padding: 0 0 60px;}
+.row>section.subject1,
+.row>section.subject1.theme2,
+.row>section.subject1.theme3{background:#c9e0df;}
+
+.row>section.subject1>h2{margin: 0 auto 36px;box-shadow: rgba(0,0,0,.5) 0 8px 16px;font-size: 1.5em;font-weight: normal;width:160px;height:160px;line-height:160px;background:rgba(20,150,130,.9);color:#fff;}
+.subject1 .linkStyle1{width: 92vw;margin: 1em auto;padding: 0 0 1em;background:rgba(255,255,255,.88);}
+.subject1 .linkStyle1 h3{text-align:center;background:#444;color:#fff;height:2.5em;line-height:2.6em;overflow:hidden;padding:0 18px;margin:0 0 .7em;font-weight:normal;font-size:1.1em;}
+
+.linkStyle1>.infront,
+.linkStyle1 ul{margin:1.5em auto 1em;width: 85%;}
+.linkStyle1>.infront{line-height:1.8;}
+
+.subject1 .linkStyle1 h3+ul{margin-top:1.3em;}
+.subject1 .linkStyle1 ul li{position:relative;margin:0 0 .4em;height:3em;}
+.subject1 .linkStyle1 ul li:hover{background:#fff;}
+.subject1 .linkStyle1 ul li:before{content:'';display:inline-block;width:5%;height:100%;vertical-align:middle;}
+.subject1 .linkStyle1 ul li:after{content:'';position:absolute;right:12px;top:50%;margin-top:-6px;width:11px;height:11px;border:2px solid #888;transform:rotate(45deg);border-left:none;border-bottom:none;}
+.subject1 .linkStyle1 li:hover:after{border-color:#72ae18;}
+.subject1 .linkStyle1 li a {display:inline-block;margin:0 auto;text-decoration:none;vertical-align:middle;width:82%;max-height:3em;overflow:hidden;line-height:1.25;}
+.subject1 .linkStyle1 li a:before{content:'';position:absolute;border:1px solid #aaa;left:0;top:0;right:0;bottom:0;transition:.2s;}
+.subject1 .linkStyle1 li a:hover:before,
+.subject1 .linkStyle1 li a:focus:before{border-color:#444;box-shadow:rgba(0,0,0,.4) 0 2px 5px;}
+
+.subject1 .tabs{width:92vw;margin:1em auto;box-shadow:none;background:rgba(255,255,255,.88);}
+.subject1 .tabContent{background:rgba(255,255,255,.88);}
+.subject1 .tabContent article {height:7em;}
+.subject1 .tabContent article h4{font-size:1em;margin:0 0 8px;}
+.subject1 .tabContent article figure{display:none;}
+.subject1 .tabContent li>a{display:block;line-height:1.8;padding: .5em 0;border-bottom:1px solid #bbb;text-decoration: none;}
+.subject1 .tabContent li>a:hover,
+.subject1 .tabContent li>a:focus{border-color: #333;color: #000;}
+
+.subject1 .tabItem a{display:block;font-size:1.2em;height:2.7em;line-height:2.8em;background: #bbb;}
+.subject1 .tabItem.active a{background:#199986;color: #fff;}
+.subject1 .tabItem.active a:after{background:#199986;}
+
+
+@media screen and (min-width:601px){
+	.row>section.subject1{background-repeat:no-repeat;background-size:cover;background-position:center center;overflow:hidden;}
+
+	.subject1 .linkStyle1{position:relative;float:left;width:31.2%;min-height:22em;margin:0 0 0 1.6%;padding:0;}
+
+	.linkStyle1>.infront,
+	.linkStyle1 ul{width: auto;margin:0 16px .8em;}
+	.linkStyle1>.infront{line-height:1.6;height:6.2em;overflow:hidden;}
+
+	.subject1 .linkStyle1 ul li:nth-child(n+6){display:none;}
+	.subject1 .linkStyle1>.infront+ul>li:nth-child(n+4){display:none;}
+
+	.subject1 .tabs{float:left;width:64%;margin:0 0 0 1.6%;}
+	.subject1 .tabItem a{font-size: 1.1em;}
+
+	.subject1 .tabContent{height:19.3em;padding-left:20px;padding-right:20px;padding-top:1.1em;}
+	.subject1 .tabContent li>a{padding: 0;height:2.4em; line-height:2.4em;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+
+	.subject1>.more{position:absolute;right:2.55%;bottom:20px;}
+	.subject1 .linkStyle1 .more{padding-bottom:.8em;}
+}
+@media screen and (min-width:801px){
+	.row>section.subject1{padding:60px 0 60px 21vw;}
+	.row>section.subject1>h2{position:absolute;top:0;left: 0;width: 18vw;height:18vw;line-height:18vw;margin: 0;font-size: 1.3em;}
+}
+@media screen and (min-width:1001px){
+	.row>section.subject1{padding-left:25%;}
+	.row>section.subject1>h2{left:30px;width:160px;height: 160px;line-height: 160px;}
+}
+@media screen and (max-width:600px){
+	.row>section.subject1{background-image:none !important;}
+}
+
+
+
+
+/*環保局：空氣品質＋垃圾清運*/
+.epb{position:relative;background:#33aca3;color:#fff;}
+.epb:before{content: '';position: absolute;left: 37%;top:1.8em;bottom:28%;width: 1px;background: rgba(255,255,255,.65)}
+.row:not(.gutter):not(.gutter1)>.epb{box-shadow:none;}
+.epb.trash{background:#8cc11f;color:#fff;}
+.epb a{color:#fff;}
+.row>.epb h2{float:left;width:37%;text-align:center;letter-spacing:3px;padding: .3em 0 0;/*border-right: 1px solid #fff;*/}
+.epb .icon{position:absolute;left:0;width:37%;top:5em;/*border-right: 1px solid #fff;*/}
+.epb .icon img{display:block;margin:10px auto;width:96px;}
+
+.epb h3,
+.epb ul{width:50%;margin:0 auto 0 44%;}
+.epb h3{height:2em;line-height:2em;padding:0 0 .6em;}
+.epb ul{min-height:8em;}
+
+.epb .more{clear: both;margin-top:1em;}
+.epb .more a,
+.epb .more a:before{color:#f5ffa0}
+.epb .more a:hover,
+.epb .more a:hover:before{color:#00705f}
+@media screen and (min-width:601px){
+	/*.epb:before{bottom:4.5em;}*/
+}
+@media screen and (min-width:1001px){
+	.row>.epb h2{float: none;width: auto;height:80px;line-height:110px !important;margin-left:100px;margin-right: 10%;border: none;padding:0;}
+	.epb:before{display: none;}
+	.epb h3,
+	.epb ul {width:80%;margin:0 auto;}
+	.epb h3{border-top:1px dotted rgba(255, 255, 255, .65);padding:.6em 0 0;margin-top: .8em;}
+	.epb ul{border-bottom:1px dotted rgba(255, 255, 255, .65);line-height:1.2;min-height:8em;}
+	.epb li{margin:.5em 0;text-indent:-3em;padding-left:3em;}
+	.epb .icon{left:10%;top:2.6em;width: auto;border: none;}
+	.epb .icon img{display:block;width:72px;margin: 0;}
+}
+
+
+
+.qa{background:#fff;}
+.qa ol{width:92vw;margin:.6em auto 0;}
+.qa li{line-height:1.5;border:1px solid #aaa;margin-top:-1px;overflow:auto;}
+.qa li p{position:relative;margin:0;}
+.qa .question{font-size:1.2em;}
+.qa .question>a{position:relative;display:block;padding:15px 36px 15px 44px;text-decoration: none;}
+.qa .question>a:after{content:'';position:absolute;right:10px; top:25px;width:16px; height:16px;border:2px solid #777;border-top:none;border-left:none;transform:rotate(-135deg);transition:.4s;}
+.qa .hiddenAns .question>a:after{transform:rotate(45deg);top:18px;}
+.qa .answer{border-top:1px dashed #bbb;padding:15px 12px 15px 44px;}
+.qa .hiddenAns .answer{display:none;}
+.qa li .detail {display:block;text-align:right;margin:.3em 12px 0 1em;line-height:1.5;}
+.qa li .detail a{display:inline-block;text-decoration:none;border:1px solid #bbb;padding:0 .8em;line-height:1.8em;height:1.8em;transition: .2s;}
+.qa li .detail a:hover,
+.qa li .detail a:focus{border-color:#000;box-shadow: rgba(0,0,0,.5) 0 1px 5px;}
+.qa .question:before,
+.qa .answer:before{position:absolute;left:-10px;top:10px;text-indent: 5px;
+	/*left:12px;top:9px;*/width:44px;height:44px;line-height:44px;background:#bbb;color:#fff;font-size:20px;text-align:center;border-radius:50%;font-weight:normal;}
+.qa .question:before{content:'問';}
+.qa .answer:before{content:'答';background:#555;}
+.no-js .qa .answer{display:block;}
+@media screen and (min-width:601px){
+	.qa ol{width:88%;}
+	.qa .question>a{padding-right:48px;}
+	.qa .question>a:after{right:20px;}
+	.qa .question>a,
+	.qa .answer{padding-left: 68px;}
+	.qa .question:before,
+	.qa .answer:before{left:12px;top:9px;text-indent: 0;}
+	.qa .question:before{top:8px;}
+}
+
+
+/* 2019 Animal 
+.animalSearch{margin: 0 auto 30px;overflow: hidden;background: #f3f3f3;}
+.animalSearch>.bulletin{padding: 2em 3% 1.5em;}
+.bulletin ul{padding-left: 1.5em;line-height: 1.5;}
+.bulletin li{list-style:square;margin: 0 0 1em;}
+
+.animalSearch>form{margin: 0;padding: 2em 3% 1.5em;background: #555;color: #fff}
+.animalSearch>form th,
+.animalSearch>form td{padding: 4px 0;display: table-cell;}
+.animalSearch>form th,
+.animalSearch>form td:first-child{font-weight: bold;color: #ddd;padding-right: 6px;text-align: right;line-height:1.25;white-space: nowrap;}
+.animalSearch>form th label,
+.animalSearch>form td:first-child label{width: auto;margin: 0;line-height: inherit;white-space: normal}
+.animalSearch>form th:after,
+.animalSearch>form td:first-child:after{content: "";display: inline-block;height: 2.3em;width: 0;vertical-align: middle;}
+.animalSearch>form .buttonDiv{margin-left: 0;margin-right: 0;}
+.animalSearch>form td:nth-child(2) label{display: inline-block;margin: 0 .9em 0 .2em;border-radius: 4px;padding: 0 3px;}
+.animalSearch>form td label input{vertical-align: 5%;outline: none;}
+.animalSearch>form td select,
+.animalSearch>form td input[type="text"],
+.animalSearch>form td textarea{border: none;border-radius: 4px;box-sizing: content-box;}
+.animalSearch>form td select:only-child{width: 100%;box-sizing: border-box}
+.animalSearch>form td input[type="text"]:only-child{width: 97%;width: calc(100% - .8em)}
+.animalSearch>form td textarea{height: 6em;min-height: 0;width: 97%;width: calc(100% - .8em)}
+.animalSearch>form td button{border-radius: 4px;}
+.animalSearch>form td input[id*="SaveDate"],
+.animalSearch>form td input[name*="SaveDate"]{width: 6em;margin-bottom: 5px;}
+.animalSearch>form table{width: 100%;margin: 0 auto}
+
+.animalSearch>form td:nth-child(2) label:hover,
+.animalSearch>form td:nth-child(2) label:focus{box-shadow:#dbff57 0 0 0 2px;}
+.animalSearch>form td:nth-child(2){width: 62%;}
+
+.animalSearch .datePeriod input[type="text"]{width:45%;}
+.datePeriod input +  .clearDate{margin-left: 4px;}
+@media screen and (min-width:440px){
+	.animalSearch>form td:nth-child(2){width: 70%;}
+}
+@media screen and (min-width:601px){
+	.animalSearch .datePeriod input[type="text"]{width: 7em;}
+	.animalSearch .datePeriod {white-space: nowrap;}
+}
+@media screen and (min-width:800px){
+	.animalSearch{width: 96%;margin: 2vw auto;}
+	.animalSearch>form td:nth-child(2){width: 65%;}
+  .animalSearch>form{width: 44%;float: right;}
+  .animalSearch>.bulletin{width: 44%;float: left;}
+  .animalSearch>.bulletin:only-child{float: none;width: auto;}
+  .animalSearch>form textarea{height: 7em;line-height: 1.4}
+}
+@media screen and (min-width:1000px){
+	.animalSearch{width: 96%;margin: 1em auto;}
+}
+
+*/
+
+
+.multiColumn{margin:0;overflow: hidden;background: #f3f3f3;}
+.bulletin {position: relative;width: 90%;margin: 2vw auto;padding:2.5em 3% 2em;line-height: 1.8em;border-radius: 6px;}
+.multiColumn>.bulletin{padding: 2em 3% 1.5em;}
+.bulletin ul{padding-left: 1.5em;line-height: 1.5;}
+.bulletin li{list-style:square;margin: 0 0 1em;}
+
+.animalSearch{width: 96%;margin: 2vw auto;padding: 2.5em 0 2em;border-radius: 6px;background: #7c8785;color: #fff;}
+.animalSearch form table{width:92%;margin: 0 auto;}
+.animalSearch.aDrawer form table{margin-top: 1em;}
+.animalSearch .buttonDiv{width: 92%;margin-bottom: 0;}
+.animalSearch form td:nth-child(2){width:76%;}
+.animalSearch form th,
+.animalSearch form td{display: table-cell;padding:2px 0;}
+.animalSearch form th,
+.animalSearch form td:first-child{font-weight: bold;text-align: right;color: #fff;padding-right: 6px;min-width: 4em;line-height:1.25;}
+.animalSearch form th label,
+.animalSearch form td:first-child label{width: auto;margin: 0;line-height: inherit;white-space: normal;vertical-align:middle;}
+.animalSearch form td:first-child:before{content: "";display: inline-block;height: 2.2em;width: 0;vertical-align: middle;}
+.animalSearch form table caption{font-size: 1.25em;line-height: 1.3;margin-bottom:0;padding-bottom: 1.2em}
+.animalSearch form table caption i,
+
+.animalSearch form td:nth-child(2) label{display: inline-block;margin: 0 .9em 5px 2px;border-radius: 3px;padding: 0 3px;}
+.animalSearch form td:nth-child(2) label:hover,
+.animalSearch form td:nth-child(2) label:focus{box-shadow:#deff33 0 0 0 2px;}
+
+.animalSearch input{outline: none}
+.animalSearch input[type="text"],
+.animalSearch input[type="password"],
+.animalSearch input[type="tel"],
+.animalSearch input[type="email"],
+.animalSearch input[type="date"],
+.animalSearch input[type="number"],
+.animalSearch input[type="time"],
+.animalSearch input[type="url"],
+.animalSearch input[type="file"],
+.animalSearch select {border: none;box-sizing:border-box;margin: 0 0 5px 0;}
+.animalSearch textarea{width:100%;height: 6em;line-height: 1.5;padding:.3em .4em 0;border: none;box-sizing:border-box;}
+
+.animalSearch input[type="text"]:only-child,
+.animalSearch input[type="password"]:only-child,
+.animalSearch input[type="tel"]:only-child,
+.animalSearch input[type="email"]:only-child,
+.animalSearch input[type="date"]:only-child,
+.animalSearch input[type="number"]:only-child,
+.animalSearch input[type="time"]:only-child,
+.animalSearch input[type="url"]:only-child,
+.animalSearch input[type="file"]:only-child,
+.animalSearch select:only-child {width:100%;}
+
+.animalSearch input[type="checkbox"],
+.animalSearch input[type="radio"]{vertical-align: 5%;margin-right:.3em;}
+
+.animalSearch input + .clearDate {margin-left: 5px;}
+
+.animalSearch p{margin: 1.2em auto 0;width: 92%;}
+.animalSearch td p{width: auto;}
+.animalSearch .datePeriod input[type="text"]{width:45%;}
+
+@media screen and (min-width:601px){
+	.animalSearch form table{width: auto;max-width:92%;min-width: 72%;}
+	.animalSearch .datePeriod input[type="text"]{width: 7em;}
+	.multiColumn .animalSearch .datePeriod {white-space: nowrap;}
+}
+@media screen and (min-width:801px){
+	.animalSearch form table{max-width: 720px;}
+	.multiColumn .animalSearch form table{width:92%;}
+
+	.multiColumn .animalSearch{width: 50%;float: right;position: relative;z-index: 9;}
+	.multiColumn .bulletin{width: 44%;float: left;}
+	.multiColumn .bulletin:only-child{float: none;width: auto;}
+	
+	.animalSearch>form td:nth-child(2){width: 65%;}
+
+	/* 模擬背景延伸 */ 
+	.multiColumn{position: relative;}
+	.multiColumn:after{content: '';position: absolute;right: 0;bottom: 0;width: 50%;top: 0;background: #7c8785;}
+	.multiColumn + .page{margin-top:2em;}
+}
+@media screen and (min-width:1001px){
+	.multiColumn,
+	.animalSearch{width: 96%;margin: 0 auto;}
+	.bulletin{margin: 0 auto 1em;}
+}

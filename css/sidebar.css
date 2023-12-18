@@ -1,0 +1,21 @@
+/*行動版隱藏式側欄*/
+.sidebar{position:fixed;top:0;height:100%;background-color:#fff;width:280px;overflow-y:auto;z-index:9000;}
+
+.sidebar .menu li{line-height:1.3;}
+.sidebar .menu>ul{font-size:1.2em;}
+.sidebar .menu a{display:block;padding:.7em 12px;color:#000;text-decoration:none;transition:.4s;}
+.sidebar .menu li>a{border-bottom:1px solid #bbb;}
+.sidebar .menu li li:last-child>a{border-bottom:none;}
+.sidebar .menu li.hasChild>a{padding-right:36px;position:relative;}
+.sidebar .menu li.hasChild>a:before{content:'';position:absolute;right:16px;top:.8em;width:.64em;line-height:.64em;height:.64em;border:2px solid #888;transform:rotate(45deg);border-top:none;border-left:none;transition:.3s;}
+.sidebar .menu li.hasChild.closeThis>a:before{transform:rotate(225deg);top:1.1em;}
+.sidebar .menu li.hasChild.closeThis{padding-bottom:12px;}
+.sidebar .menu ul ul{display:none;margin:0 10px;background:rgba(0,0,0,.09);font-size:.9em;}
+.sidebar .menu ul ul ul{font-size:1em;}
+
+.sidebar .navigation{position:static;text-align:center;padding:1em 0;}
+.sidebar .navigation ul{float:none;width:92%; margin:0 auto;padding:0;font-size:1em;overflow:hidden;}
+.sidebar .navigation li{float:left;width:50%;margin:0;padding:0;}
+.sidebar .navigation li:nth-child(odd):last-child{width:100%;}
+.sidebar .navigation li a{display:block;height:3.2em;line-height:3.2em;padding:0 .5em;background:#fff;color:#000;text-decoration:none;box-shadow:#bbb 0 0 0 1px;}
+.sidebar .sidebarClose {display:block;width:92%;padding:0;margin:0 auto;height:3.2em;line-height:3.2em;border-radius:4px;}

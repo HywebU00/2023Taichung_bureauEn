@@ -1,0 +1,205 @@
+.row{clear:both;overflow:auto;}
+.firstRow{clear:both;overflow: hidden;}
+
+.row>section{padding:25px 0 10px;margin: 0 auto;}
+.row>section>h2{text-align:center;padding:0 0 10px;line-height: 1.2;}
+
+.cx2>section, .cx3>section, .cx4>section,
+.cx2a>section, .cx2b>section,
+.cx3a>section, .cx3b>section, .cx3c>section{float:left;}
+/*定義直欄寬度*/
+.cx2>section{width:50%;/*max-width: 780px;*/}
+.cx2a>section{width:33%;/*max-width: 420px;*/}
+.cx2a>section:first-child{width:67%;}
+.cx2b>section{width:66%;}
+.cx2b>section:first-child{width:34%;/*max-width: 420px;*/}
+
+.cx3>section{width:33%;/*max-width: 420px;*/}
+.cx3>section:first-child{width:34%;}
+.cx3a>section,
+.cx3b>section,
+.cx3c>section{width:25%;/*max-width: 420px;*/}
+.cx3a>section:first-child,
+.cx3b>section:last-child,
+.cx3c>section:nth-child(2){width:50%;/*max-width: 600px;*/}
+
+.cx4>section{width:25%;/*max-width: 420px;*/}
+
+
+@media screen and (max-width:1000px) {
+	.main{width:100%;box-shadow:none;}
+	/*.row>section:only-child{padding: 50px 0 40px;}*/
+	.cx3a>section,
+	.cx3b>section,
+/*	.cx3c>section,*/
+	.cx4>section{width:50%;}
+
+	.cx2a>section,
+	.cx2a>section:first-child,
+	.cx2b>section,
+	.cx2b>section:first-child,
+	.cx3a>section:first-child,
+	.cx3b>section:last-child,
+	.cx3c>section:nth-child(n){float:none;clear:both;width:auto;margin:0 auto;padding: 50px 0 40px;}
+}
+@media screen and (max-width:800px) {
+	.cx2>section,
+	.cx3>section,
+	.cx3>section:first-child{float:none;clear:both;width:auto;margin:0 auto;}
+}
+@media screen and (max-width:600px) {
+	.cx3a>section,
+	.cx3b>section,
+	.cx4>section{float:none;clear:both;width:auto;margin:0 auto;}
+}
+
+
+
+/*gutter gutter gutter gutter gutter*/
+
+.gutter,
+.gutter1{padding:20px 0;}
+.gutter>section:only-child,
+.gutter1>section:only-child{padding-top: 0;}
+@media screen and (min-width:421px){
+	.gutter>section,
+	.gutter1>section{box-shadow: rgba(0,0,0,.5) 0 0 3px;}	
+}
+@media screen and (min-width:801px){
+
+	.row:not(.gutter):not(.gutter1)>section{box-shadow:rgba(0,0,0,.2) -1px -1px 1px;}
+
+}
+
+.gutter>section{margin:0 auto;width: 96.8%}
+.gutter1>section{margin:0 auto;width: 88%}
+
+.cx2.gutter>section{width:47.6%;margin:0 .8%;}
+.cx2.gutter>section:first-child{margin-left:1.6%;}
+.cx2.gutter1>section{width:43%;margin:0 1%;}
+.cx2.gutter1>section:first-child{margin-left:6%;}
+
+.cx2a.gutter>section,
+.cx2a.gutter1>section,
+.cx2b.gutter>section,
+.cx2b.gutter1>section{width:31.8%;margin:0 .6%;}
+.cx2a.gutter>section:first-child,
+.cx2a.gutter1>section:first-child,
+.cx2b.gutter>section:last-child,
+.cx2b.gutter1>section:last-child{width:63.6%;}
+.cx2a.gutter>section:first-child,
+.cx2a.gutter1>section:first-child,
+.cx2b.gutter>section:first-child,
+.cx2b.gutter1>section:first-child{margin-left:1.7%;}
+
+.cx3.gutter,
+.cx3.gutter1{text-align: center;}
+.cx3.gutter>section,
+.cx3.gutter1>section{float: none;display: inline-block;vertical-align: top;text-align: left;max-width: 420px;}
+.cx3.gutter>section{width:31%;margin:0 .6%;}
+.cx3.gutter1>section{width:28%;margin:0 .5%;}
+
+.cx3a.gutter>section,
+.cx3b.gutter>section,
+.cx3c.gutter>section,
+.cx3a.gutter1>section,
+.cx3b.gutter1>section,
+.cx3c.gutter1>section{width:23.4%;margin:0 .8%;}
+.cx3a.gutter>section:first-child,
+.cx3b.gutter>section:last-child,
+.cx3c.gutter>section:nth-child(2),
+.cx3a.gutter1>section:first-child,
+.cx3b.gutter1>section:last-child,
+.cx3c.gutter1>section:nth-child(2){width:46.8%;}
+.cx3a.gutter>section:first-child,
+.cx3b.gutter>section:first-child,
+.cx3c.gutter>section:first-child,
+.cx3a.gutter1>section:first-child,
+.cx3b.gutter1>section:first-child,
+.cx3c.gutter1>section:first-child{margin-left:1.6%;}
+
+.cx4.gutter,
+.cx4.gutter1{text-align: center;}
+.cx4.gutter>section,
+.cx4.gutter1>section{float:none;display:inline-block;vertical-align:top;text-align: left;max-width:420px;}
+.cx4.gutter>section{width:23%;margin:0 .5%;}
+.cx4.gutter1>section{width:22%;margin:0 .3%;}
+
+
+@media screen and (max-width:1000px) {
+
+	.row.gutter>section:only-child{width:92vw;}
+
+	.cx2a.gutter>section,
+	.cx2a.gutter>section:first-child,
+	.cx2b.gutter>section,
+	.cx2b.gutter>section:last-child,
+	.cx2a.gutter1>section,
+	.cx2a.gutter1>section:first-child,
+	.cx2b.gutter1>section,
+	.cx2b.gutter1>section:last-child{float: none;width: 92vw;margin: 30px auto;}
+	.cx2a.gutter>section:last-child,
+	.cx2b.gutter>section:first-child{max-width: 480px;}
+
+	.cx2a.gutter>section:first-child,
+	.cx2a.gutter1>section:first-child,
+	.cx2b.gutter>section:first-child,
+	.cx2b.gutter1>section:first-child{margin-left:auto;}
+
+	.cx3a.gutter>section,
+	.cx3b.gutter>section{margin:12px 1vw;width:45vw;}
+	.cx3a.gutter>section:nth-child(2),
+	.cx3b.gutter>section:first-child{margin-left:4vw;}
+	.cx3b.gutter>section{margin-bottom: 24px;}
+
+	.cx3a.gutter>section:first-child,
+	.cx3b.gutter>section:last-child,
+	.cx3c.gutter>section:first-child,
+	.cx3c.gutter>section:last-child,
+	.cx3c.gutter>section:nth-child(2){float: none;margin:30px auto;width:92vw;}
+
+	.cx4.gutter>section{margin:1vw .6vw;width:47vw;}
+	.cx4.gutter1>section{margin:1vw .6vw;width:41vw;}
+}
+@media screen and (max-width:800px) {
+
+	.gutter:first-of-type,
+	.gutter1:first-of-type{padding-top: 0;}
+
+	.cx2.gutter>section,
+	.cx2.gutter>section:first-child,
+	.cx2.gutter1>section,
+	.cx2.gutter1>section:first-child{float: none;width: 92vw;margin: 30px auto;}
+	.cx2.gutter>section{max-width: 600px;}
+	.cx2.gutter1>section{max-width: 520px;}
+
+	.cx3.gutter>section,
+	.cx3.gutter1>section{display: block;margin:30px auto;width:92vw;max-width: none;}
+
+	.cx3c.gutter>section:nth-child(n){margin:30px auto;width:92vw;}
+}
+@media screen and (max-width:600px) {
+
+	.cx3a.gutter>section,
+	.cx3b.gutter>section{float: none;margin:30px auto;width:92vw;max-width: none;}
+
+	.cx4.gutter>section,
+	.cx4.gutter1>section{display: block;margin:30px auto;width:92vw;max-width: none;}
+
+	.gutter:first-of-type,
+	.gutter1:first-of-type{padding-top:0;}
+}
+@media screen and (max-width:420px){
+	.row,
+	.gutter,
+	.gutter1{padding: 0;}
+	.row>section,
+	.gutter>section,
+	.gutter1>section{width:100vw !important;margin: 0 !important;padding:40px 0 30px;}
+
+	.gutter>section:only-child,
+	.gutter1>section:only-child{box-shadow:none;}
+}
+
+
+

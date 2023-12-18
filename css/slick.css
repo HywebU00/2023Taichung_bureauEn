@@ -1,0 +1,115 @@
+/* Slider */
+.slick-slider { position: relative; display: block; 
+-moz-box-sizing: border-box; 
+box-sizing: border-box; 
+-webkit-user-select: none; 
+-moz-user-select: none; 
+-ms-user-select: none; 
+user-select: none; 
+-webkit-touch-callout: none; 
+-khtml-user-select: none; 
+-ms-touch-action: pan-y; 
+touch-action: pan-y; 
+-webkit-tap-highlight-color: transparent; 
+}
+.slick-list { position: relative; display: block; overflow: hidden; margin: 0; padding: 0; }
+.slick-list:focus { outline: none; }
+.slick-list.dragging { cursor: pointer; cursor: hand; }
+.slick-slider .slick-track, .slick-slider .slick-list { 
+-webkit-transform: translate3d(0, 0, 0); 
+-moz-transform: translate3d(0, 0, 0); 
+-ms-transform: translate3d(0, 0, 0); 
+-o-transform: translate3d(0, 0, 0); 
+transform: translate3d(0, 0, 0); }
+.slick-track { position: relative; top: 0; left: 0; display: block; }
+.slick-track:before, .slick-track:after { display: table; content: ''; }
+.slick-track:after { clear: both; }
+.slick-loading .slick-track { visibility: hidden; }
+.slick-slide { display: none; float: left; height: 100%; min-height: 1px; }
+[dir='rtl'] .slick-slide { float: right; }
+.slick-slide img { display: block; margin:0; padding:0; }
+.slick-slide.slick-loading img { display: none; }
+.slick-slide.dragging img { pointer-events: none; }
+.slick-initialized .slick-slide { display: block; }
+.slick-loading .slick-slide { visibility: hidden; }
+.slick-vertical .slick-slide { display: block; height: auto; border: 1px solid transparent; }
+.slick-arrow.slick-hidden { display: none; }
+
+/* 大圖輪播 */
+.adloop { position:relative; height:450px;/*width:100%; */overflow:hidden; text-align:center; }
+.adloop a{display:block;position: relative;}
+/*.adloop a:before{display: none;content: '';position: absolute;left: 0;top: 0;right: 0;bottom: 0;box-shadow: #e00 0 0 0 3px inset;}*/
+.adloop img { display:block; width:100%; height:450px;}
+.adloop .slick-arrow { visibility:hidden;position:absolute; top:50%; bottom:20px; z-index:1; font-size:0; border:none; width:60px; height: 84px;margin-top: -42px;background: url(../images/btnArrowL.png) no-repeat 8px 8px; opacity:.5; cursor:pointer; left:0;border-radius: 0 4px 4px 0;}
+.adloop:hover .slick-arrow { visibility:visible;} 
+.adloop .slick-arrow:hover ,
+.adloop .slick-arrow:focus {visibility:visible; opacity:1;background-color: rgba(0,0,0,.2);}
+.adloop .slick-arrow:focus {outline: none;background-color: rgba(0,0,0,.5);}
+.adloop .slick-arrow.slick-next {left:auto; right:0; background-position: -192px 8px;border-radius: 4px 0 0 4px;}
+.adloop .slick-dots{position: absolute;  bottom: 20px; width: 100%; text-align: center}
+.adloop ul {list-style:none; margin:0 auto; padding:0;font-size:0; text-align:center;}
+.adloop .slick-dots li {margin:6px; padding:0; display:inline-block;}
+.adloop li button {font-size:0;padding:0;  width:15px; height:15px; border-radius:50%; border:none; background:#bbb;}
+.adloop li.slick-active button {background:#ff6e03;}
+.no-js .adloop > div {position: absolute;}
+
+@media (max-width: 1000px) {
+	/*.adloop {height:350px; }*/
+	.adloop { float:none;width:100vw; height:47vw;}
+	.adloop img { width:100%;height:100%;width:100vw; height:47vw;}
+	.adloop .slick-arrow { visibility:visible; outline:none;}
+}
+@media (max-width: 600px) {
+	.adloop .slick-arrow {background-size:auto 48px;  width:40px; background-position:5px center;}
+	.adloop .slick-arrow.slick-next { background-position: -127px center;}
+}
+
+/*照片內容頁*/
+/* .album {width:96%;margin:-15px auto -30px; padding-top:15px;} */
+/* .album article { margin:0 40px; padding:2em 0 1em; font-size:1.2em; border-top:1px solid #aaa;} */
+.photoSlide { position:relative; width:100%; overflow:hidden; text-align:center;margin:0 auto 10px;}
+.photoSlide>div { width:940px; height:560px;padding:16px; margin:0 auto;}
+.photoSlide a {display:block; }
+.photoSlide img { display:block;margin:0 auto; max-width:880px; max-height:500px;box-shadow:#888 0 1px 6px; border:8px solid #fff;}
+.photoSlide .caption { display:inline-block; font-size:1em; line-height:1.5; margin:.8em 1em 0;}
+
+.photoNav { position:relative; margin:0 auto 5px; padding:0;width:780px; }
+.photoNav .slick-list {width:560px;margin:0 auto;padding:0 50px;background:#777;  text-align:center;}
+.photoNav .slick-slide img { display:block; margin:0 auto;width:100px; height:100px;object-fit:cover; border:1px solid #444;}
+.photoNav .slick-slide>a {display:block; margin:12px 0;width:102px;  border:4px solid transparent; outline:none;}
+.photoNav .slick-slide>a:hover { border-color:#9ab;}
+.photoNav .slick-slide>a:focus { border-color:#9ab;outline:none;}
+.photoNav .slick-slide.slick-current>a { border-color:#df3;}
+.photoNav .slick-arrow { position:absolute; top:50%; left:10px; z-index:1; font-size:0; border:none; width:32px; height:60px; margin-top:-30px; background:url(../images/btnArrow.png) no-repeat center 20px;cursor:pointer; z-index:99;border-radius:4px; opacity:.5}
+.photoNav .slick-arrow.slick-next {  left:auto; right:10px; background-position: center -80px;}
+.photoNav .slick-arrow:hover {background-color:rgba(0,0,0,.2); opacity:1;}
+.photoNav .slick-arrow:focus {background-color:rgba(0,0,0,.2); opacity:1;}
+@media (max-width: 1000px) {
+	/* .album { margin-top:0; background:none;}
+	.album article { font-size:1em;margin:0 16px;} */
+	.photoSlide>div { width:92%;height:600px;}
+	.photoSlide img {max-width:100%; max-height: 400px;}
+	.photoSlide .caption { font-size:.88em;}
+}
+@media (max-width: 800px) {
+	.photoSlide>div { width:auto; height:auto; padding:15px 20px;}
+	.photoSlide img {max-width:90%;}
+
+	.photoNav { width:auto;background:none;}
+	.photoNav .slick-list { width:auto; margin:0 40px;background:none;}
+	.photoNav .slick-slide:focus { outline:none;}
+	.photoNav .slick-slide img {width:auto; max-width:100%; height:80px;border:1px solid #444; box-sizing:border-box;}
+	.photoNav .slick-slide>a {margin:10px 1px 0; padding:5px;width:auto; border:none; background:#ccc;}
+	.photoNav .slick-slide.slick-current>a { background:#444;}
+	.photoNav .slick-arrow { left:5px; }
+	.photoNav .slick-arrow.slick-next { right:5px; }
+}
+@media (max-width: 600px) {
+	.photoNav .slick-slide { display:none; }
+	.photoNav .slick-arrow { margin-top:200px;}
+}
+@media (min-width: 1001px) {
+	.album {width:96%;margin:-15px auto -30px; padding-top:15px;}
+	.album article { margin:0 40px; padding:2em 0 1em; font-size:1.2em; }
+}
+
