@@ -13,24 +13,6 @@
 .header .navigation li{float:left;margin:0 .8em;}
 .header .navigation li a{display:inline-block;height:2.15em;line-height:2.2em;padding:0 2px;text-decoration:none;}
 
-/* .header .search{position:absolute;right:10px;top:40px;}
-.header .search label{font-size:0;}
-.header .search input{vertical-align:top;border:none;height:2.4em;line-height:2.4em;float:left;border-radius: 2em;transition: .15s;}
-.header .search input[type="submit"]{padding:0;margin:0;width: 2.4em;color:transparent;text-indent:-8em;background:#777 url(../images/search_submit.png) no-repeat center center;background-size:20px;}
-
-.header .search input[type="text"]{width:12em;padding:0 1em;margin:0 5px 0 3px;box-sizing:border-box;}
-.header .search a{display:inline-block;font-size: .92em;width:5em;line-height:1.25em;margin:1px 0;padding:0 2px;text-decoration:none;text-align: left;} */
-
-
-
-/*花博倒數*/
-/* 
-.flowerCountdown{position:absolute;top:4px;left:50%;width:102px; height:74px;margin-left:-240px;border-radius:6px;background: rgba(0,0,0,.7);overflow: hidden;}
-.flowerCountdown:before{content: '花博倒數';position: absolute;background: #000;color:#bdf21c;letter-spacing: 3px;top: 3px;left: 4px;font-size: 15px;line-height: 1;padding: 3px 12px 3px 3px;}
-.flowerCountdown iframe{margin:-38px auto auto -98px;border:none;}
-.flowerCountdownMobil{display:none;position:absolute;overflow: hidden;} 
-*/
-
 @media screen and (max-width:1000px) {
 	.header{padding:0 64px;height:64px;margin-bottom:0;background-image: none !important;}
 	.header>h1{height:100%;width:auto;}
@@ -60,7 +42,6 @@
 		--bgc: #199986;
 
 		position:absolute;right:0;top:0;width:64px;height:100%;font-size:0;
-		/* background:#777; */
 		background-color: transparent;
 		&::before, &::after{content:'';position:absolute;}
 		&::before{width:25px;height:25px;border:2px solid var(--tinge);border-radius:50%;left:23%;top:23%;}
@@ -78,16 +59,6 @@
 
 	}
 
-	/* .header .search {display:none;position:fixed;left:0;right:0;padding:.5em .8em;background:rgba(0,0,0,.7);width: auto;text-align: center;}
-
-
-	.header .search form{display: inline-block;width:100%}
-	.header .search input{float: none;height:3em;vertical-align: middle;}
-	.header .search a{color:#fff;vertical-align: middle;margin: 2px 0 0 1em;}
-	.header .search a:focus,
-	.header .search a:hover{color:#fff;}
-	.header .search input[type="text"]{width:calc(96% - 10em);max-width:20em;}
-	.header .search input[type="submit"]{width:3em;} */
 }
 
 @media screen and (max-width:600px){
@@ -100,7 +71,4 @@
 
 	.header .sidebarCtrl:before,
 	.header .sidebarCtrl:after{width:56%;margin-left:-28%}
-
-	/* .header .search{top:44px;}
-	.header .search input[type="text"]{width:calc(100% - 8em);} */
 }
