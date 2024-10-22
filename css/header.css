@@ -2,7 +2,8 @@
 .header{position:relative;margin:0 auto;padding:2em 0 0;z-index:5000;background-repeat: no-repeat;background-position: left bottom;background-size: cover;}
 .header>h1{clear:both;height:64px;width:60%;margin: 0;}
 .header>h1 a{display:inline-block;}
-.header>h1 a:focus{outline: 1px solid red;}
+
+.header>h1 a:focus{outline: 2px solid #eb6400; outline-offset: -2px;}
 .header>h1 img{display:block;height:60px;margin:10px 20px 0;}
 .header.fixed .menu,
 .header.fixed .megaMenu{position:fixed;left:50%;width:100%;margin-left:-50%;right:0;top:0;box-shadow:rgba(0,0,0,.5) 0 0 25px;}
@@ -12,21 +13,23 @@
 .header .navigation li{float:left;margin:0 .8em;}
 .header .navigation li a{display:inline-block;height:2.15em;line-height:2.2em;padding:0 2px;text-decoration:none;}
 
-.header .search{position:absolute;right:10px;top:40px;}
+/* .header .search{position:absolute;right:10px;top:40px;}
 .header .search label{font-size:0;}
 .header .search input{vertical-align:top;border:none;height:2.4em;line-height:2.4em;float:left;border-radius: 2em;transition: .15s;}
 .header .search input[type="submit"]{padding:0;margin:0;width: 2.4em;color:transparent;text-indent:-8em;background:#777 url(../images/search_submit.png) no-repeat center center;background-size:20px;}
 
 .header .search input[type="text"]{width:12em;padding:0 1em;margin:0 5px 0 3px;box-sizing:border-box;}
-.header .search a{display:inline-block;font-size: .92em;width:5em;line-height:1.25em;margin:1px 0;padding:0 2px;text-decoration:none;text-align: left;}
+.header .search a{display:inline-block;font-size: .92em;width:5em;line-height:1.25em;margin:1px 0;padding:0 2px;text-decoration:none;text-align: left;} */
 
 
 
 /*花博倒數*/
+/* 
 .flowerCountdown{position:absolute;top:4px;left:50%;width:102px; height:74px;margin-left:-240px;border-radius:6px;background: rgba(0,0,0,.7);overflow: hidden;}
 .flowerCountdown:before{content: '花博倒數';position: absolute;background: #000;color:#bdf21c;letter-spacing: 3px;top: 3px;left: 4px;font-size: 15px;line-height: 1;padding: 3px 12px 3px 3px;}
 .flowerCountdown iframe{margin:-38px auto auto -98px;border:none;}
-.flowerCountdownMobil{display:none;position:absolute;overflow: hidden;}
+.flowerCountdownMobil{display:none;position:absolute;overflow: hidden;} 
+*/
 
 @media screen and (max-width:1000px) {
 	.header{padding:0 64px;height:64px;margin-bottom:0;background-image: none !important;}
@@ -36,23 +39,46 @@
 	.header.fixed{position: fixed;top: 0;right: 0;left: 0;}
 
 
-	.header .sidebarCtrl{display:block;position:absolute;left:0;top:0;bottom:0;width:64px;height:100%;font-size:0;}
-	.header .sidebarCtrl:before,
-	.header .sidebarCtrl:after{content:'';position:absolute;width:40%;}
-	.header .sidebarCtrl:before{height:14px;border:2px solid #fff;left:50%;top:50%;margin:-9px auto auto -20%;border-left:none;border-right:none;}
-	.header .sidebarCtrl:after{content:'';position:absolute;width:40%;height:2px;top:50%;margin:-1px auto auto -20%;background:#fff;}
+	/* 漢堡選單 */
+	.sidebarCtrl{
+		--tinge: #fff;
+		--bgc: #199986;
 
-	.searchCtrl{position:absolute;right:0;top:0;width:64px;height:100%;font-size:0;background:#777;}
-	.searchCtrl:before,
-	.searchCtrl:after{content:'';position:absolute;}
-	.searchCtrl:before{width:25px;height:25px;border:2px solid #fff;border-radius:50%;left:23%;top:23%;}
-	.searchCtrl:after{width:12px;height:4px;background:#fff;transform:rotate(45deg);left:58%;top:63%;border-radius:0 2px 2px 0;}
-	.searchCtrl.close{background:#333;}
-	.searchCtrl.close:before,
-	.searchCtrl.close:after{width:28px;height:2px;border:none;border-radius:0;background:#fff;transform:rotate(45deg);left:50%;top:50%;margin:0 auto auto -14px;}
-	.searchCtrl.close:after{transform:rotate(-45deg);}
+		background-color: transparent;
 
-	.header .search {display:none;position:fixed;left:0;right:0;padding:.5em .8em;background:rgba(0,0,0,.7);width: auto;text-align: center;}
+		display:block;position:absolute;left:0;top:0;bottom:0;width:64px;height:100%;font-size:0;
+		&:before, &:after{content:'';position:absolute;width:40%;}
+		&:before{height:14px;border:2px solid var(--tinge);left:50%;top:50%;margin:-9px auto auto -20%;border-left:none;border-right:none;}
+		&:after{content:'';position:absolute;width:40%;height:2px;top:50%;margin:-1px auto auto -20%;background:var(--tinge);}
+		&:hover, &:focus{background-color: var(--bgc);}
+	}
+
+
+	/* 查詢開關 */
+	.searchCtrl{
+		--tinge: #fff;
+		--bgc: #199986;
+
+		position:absolute;right:0;top:0;width:64px;height:100%;font-size:0;
+		/* background:#777; */
+		background-color: transparent;
+		&::before, &::after{content:'';position:absolute;}
+		&::before{width:25px;height:25px;border:2px solid var(--tinge);border-radius:50%;left:23%;top:23%;}
+		&::after{width:12px;height:4px;background:var(--tinge);transform:rotate(45deg);left:58%;top:63%;border-radius:0 2px 2px 0;}
+
+		&.close{
+			&::before, &::after{
+				width:28px;height:2px;border:none;border-radius:0;
+				background:var(--tinge);transform:rotate(45deg);left:50%;top:50%;margin:0 auto auto -14px;
+			}
+			&::after{transform:rotate(-45deg);}
+		}
+
+		&:hover, &:focus{background-color: var(--bgc);}
+
+	}
+
+	/* .header .search {display:none;position:fixed;left:0;right:0;padding:.5em .8em;background:rgba(0,0,0,.7);width: auto;text-align: center;}
 
 
 	.header .search form{display: inline-block;width:100%}
@@ -61,7 +87,7 @@
 	.header .search a:focus,
 	.header .search a:hover{color:#fff;}
 	.header .search input[type="text"]{width:calc(96% - 10em);max-width:20em;}
-	.header .search input[type="submit"]{width:3em;}
+	.header .search input[type="submit"]{width:3em;} */
 }
 
 @media screen and (max-width:600px){
@@ -75,6 +101,6 @@
 	.header .sidebarCtrl:before,
 	.header .sidebarCtrl:after{width:56%;margin-left:-28%}
 
-	.header .search{top:44px;}
-	.header .search input[type="text"]{width:calc(100% - 8em);}
+	/* .header .search{top:44px;}
+	.header .search input[type="text"]{width:calc(100% - 8em);} */
 }

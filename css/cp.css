@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document 台中機關網 */
 :root{
-	--focusColor: #007090;
+	--focusColor: #017494;
 }
 
 .share{position:fixed;right:0;top:236px;text-align:center;background:#fff;color:#727d7f;padding:5px;z-index:9000;box-shadow:rgba(0,0,0,.4) -1px 3px 10px 1px;min-height:3.2em;}

@@ -1,4 +1,11 @@
 /* StyleA （勞工局）*/
+:root{
+	--primary-color: #ffac0e;
+	--secondary-color: #199986;
+	--assistant1: #eb6400;
+	--assistant2: #556b69;
+}
+
 body{color:#444}
 a{text-decoration:none;color:#554}
 a:hover, a:focus{outline:none;color:#000;}
@@ -24,20 +31,22 @@ select:focus{border-color:#ffac0e;box-shadow:#ffac0e 0 0 0 2px;outline:none;}
 .header.fixed .megaMenu{background:rgba(255,172,14,.95);border-bottom:1px solid rgba(255,255,255,.8);}
 .header.fixed .menu>ul,
 .header.fixed .megaMenu>ul{padding:0;}
-.header .sidebarCtrl,
-.searchCtrl{background-color:transparent;}
-.header .sidebarCtrl:hover,
-.searchCtrl.close,
-.searchCtrl:hover{background-color:#199986;}
 
-.sidebar {background:#2f2f2f;}
-.sidebar .sidebarClose{color:#eee;box-shadow: #666 0 0 0 1px;}
-.sidebar .menu{background:#199986; }
-.sidebar .menu li>a{color:#fff;border-color:rgba(255,255,255,.4)}
-.sidebar .menu li li>a{border-bottom-style:dotted;}
-.sidebar .menu li.hasChild>a:before{border-color:#fff}
-.sidebar .menu ul ul{border:1px solid rgba(255,255,255,.4);border-top:none;}
-.sidebar .navigation li a{box-shadow:#556b69 0 0 0 1px;background:#fd3;}
+.sidebarCtrl, .searchCtrl, .searchCtrl.close{
+	--tinge: #fff;
+	--bgc: #199986;
+}
+.sidebar{
+	--sb-bg: #2f2f2f;
+	--sb-menu-bg: #199986;
+	--a-color: #fff;
+	--a-hover-bg : rgb(0 0 0 / .2);
+	--bd-color: rgba(255,255,255,.4);
+
+	--nav-bg: #ffac0e;
+	--nav-a-color: #000;
+	--nav-a-hover-bg: #fc2;
+}
 
 
 .header .navigation{background:#2f2f2f;left:0;}
@@ -47,17 +56,10 @@ select:focus{border-color:#ffac0e;box-shadow:#ffac0e 0 0 0 2px;outline:none;}
 .header .navigation li a:focus{color:#fe4;outline:none;}
 .header .navigation li a:hover:after,
 .header .navigation li a:focus:after{background:#fe4;height:3px;}
-.sidebar .navigation li a{background:#ffac0e;color:#000;box-shadow:#3f4534 0 0 0 1px;}
-.sidebar .navigation li a:hover{background:#fc0;}
 
-.header .search input[type="submit"]{background-color:#f50}
-.header .search input[type="submit"]:hover,
-.header .search input[type="submit"]:focus{box-shadow:#f50 0 0 0 2px;background-color:#f50;outline:none;}
-.header .search input[type="submit"]:active{box-shadow:#fff 0 0 0 2px;}
-.header .search input[type="text"]{background:rgba(255,255,255,.8);border:none;}
-.header .search input[type="text"]:hover,
-.header .search input[type="text"]:focus{background:#fff;box-shadow:#f50 0 0 0 2px;}
-.header .search a:hover{text-decoration:underline;}
+.header .search {
+	--bgc :#f50;
+}
 
 
 @media screen and (max-width:1000px){
