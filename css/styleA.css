@@ -288,7 +288,8 @@ select:focus{border-color:#ffac0e;box-shadow:#ffac0e 0 0 0 2px;outline:none;}
 .footer>section li>a:hover,
 .footer>section p>a:hover,
 .footer>section li>a:focus,
-.footer>section p>a:focus{background:#fc3;border-radius:4px;text-decoration:none;}
+.footer>section p>a:focus{box-shadow: #fff699 0 0 0 2px;text-decoration:none; outline: none;}
+
 
 .fatfootCtrl{background-color:transparent;}
 .fatfootCtrl:hover,
@@ -302,6 +303,10 @@ select:focus{border-color:#ffac0e;box-shadow:#ffac0e 0 0 0 2px;outline:none;}
 .footer .row>.epSubscribe,
 .footer .row>.sns2{padding:2em 0 1.5em;}
 
+.footer .markA a:hover,
+.footer .egov a:hover,
+.footer .markA a:focus,
+.footer .egov a:focus{box-shadow: #fff699 0 0 0 3px;background: #fff699; outline: none;}
 
 
 /* *** */
@@ -359,7 +364,7 @@ select:focus{border-color:#ffac0e;box-shadow:#ffac0e 0 0 0 2px;outline:none;}
 .navbar .shareThis{background:#556b69;}
 
 @media screen and (max-width:1000px){
-	.footer{background:#ffc822;}
+	/* .footer{background:#ffc822;} */
 }
 @media screen and (max-width:800px){
 	.category{background:#3e3e3e;}

@@ -14,8 +14,8 @@ audio, canvas, video{display:inline-block;}
 .friendly,
 .main .search,
 .ui-widget-content,
-.markA,
-.egov,
+/* .markA,
+.egov, */
 .center .share,
 .accesskey,
 .goCenter,
@@ -101,8 +101,8 @@ abbr{text-decoration: none;}
 	.friendly,
 	.main .search,
 	.ui-widget-content,
-	.markA,
-	.egov,
+	/* .markA,
+	.egov, */
 	.center .share,
 	.accesskey,
 	.goCenter,

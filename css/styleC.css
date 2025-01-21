@@ -26,10 +26,11 @@ select:focus{border-color:#5bdae1;box-shadow:#5bdae1 0 0 0 2px;}
 .sidebarCtrl, .searchCtrl, .searchCtrl.close{
 	--tinge: var(--assistant2);
 	--bgc: var(--secondary-color);
-	&:hover, &:focus { 
-		--tinge: #fff; 
-	}
 } 
+.sidebarCtrl:hover, .searchCtrl:hover, .searchCtrl.close:hover,
+.sidebarCtrl:focus, .searchCtrl:focus, .searchCtrl.close:focus{
+	--tinge: #fff; 
+}
 
 .sidebar{
   --sb-bg: var(--assistant2);
@@ -42,13 +43,13 @@ select:focus{border-color:#5bdae1;box-shadow:#5bdae1 0 0 0 2px;}
   --nav-a-color: #fff;
   --nav-a-hover-bg: #018f9c;
 
-	.sidebarClose{ 
-		color: #fff;
-		box-shadow: var(--nav-bg) 0 0 0 1px inset;
-		&:hover {box-shadow: var(--nav-bg) 0 0 0 1px;}
-		&:focus {box-shadow: var(--nav-bg) 0 0 0 2px; background-color: transparent;}
-	}
 }
+.sidebar .sidebarClose{ 
+	color: #fff;
+	box-shadow: var(--nav-bg) 0 0 0 1px inset;
+}
+.sidebar .sidebarClose:hover {box-shadow: var(--nav-bg) 0 0 0 1px;}
+.sidebar .sidebarClose:focus {box-shadow: var(--nav-bg) 0 0 0 2px; background-color: transparent;}
 
 .header .search{
 	--bgc :#1cb4bf;
@@ -364,16 +365,22 @@ select:focus{border-color:#5bdae1;box-shadow:#5bdae1 0 0 0 2px;}
 .sns:before{content:'';position:absolute;top:0;left:3%;right:3%;height:1px;background:#bbb;}
 
 
-.footer{background:#1cb4bf;padding-top: 4px;}
-.footer>nav li a:focus{outline-color:#e17c1a }
-.footer>section{color:#f3f6f6;background:none;}
-.footer>section a{display:inline-block;padding:0 .3em;border-radius:3px;color:#fe6;}
-.footer>section a:hover,
-.footer>section a:focus{text-decoration:none;background:rgba(0,0,0,.3);outline:none;}
-.footer>section p a{margin:0 .5em;}
 .fatfootCtrl{background:#e17c1a}
 .fatfootCtrl:hover,
 .fatfootCtrl:focus{background:#fa0;outline:none;}
+
+.footer{background:#2dc5d0;padding-top: 4px; color: #282828;}
+
+.footer>nav li a:focus{outline-color:#e17c1a }
+.footer>section{background:none;}
+.footer>section a{color:#000;}
+.footer>section a:hover,
+.footer>section a:focus{text-decoration:none;outline:2px solid #fff999;}
+
+.footer .markA a:hover,
+.footer .egov a:hover,
+.footer .markA a:focus,
+.footer .egov a:focus{box-shadow: #fffc99 0 0 0 3px;background: #fff999; outline: none;}
 
 @media screen and (max-width:1000px) {
 	.footer:before{display:none;}
